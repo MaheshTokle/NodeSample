@@ -11,6 +11,7 @@
     "ejs-locals": "*",
     "stylus": "*",
     "mongodb": "*",
-    "monk": "*"
+    "monk": "*",
+    "mongoose": "~3.8.2"
   }
 }

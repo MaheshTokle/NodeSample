@@ -14,13 +14,13 @@ ArticleProvider.prototype.getCollection= function(callback) {
 
 ArticleProvider.prototype.findAll = function(callback) {
     this.getCollection(function(error, article_collection) {
-      if( error ) callback(error)
-      else {
-        article_collection.find({},{},function(error,docs){
-          if( error ) callback(error)
-          else callback(null, docs)
-        });
-      }
+        if (error) callback(error);
+        else {
+            article_collection.find({}, {}, function(error, docs) {
+                if (error) callback(error);
+                else callback(null, docs);
+            });
+        }
     });
 };
 
